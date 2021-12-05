@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KGC인삼공사</title>
+    <style>
+        html { height:auto;}
+        body {
+            background-image: url('KGC인삼공사.png'), 
+            linear-gradient(to right bottom, rgb(255, 135, 0, 0.7), rgba(255, 54, 0, 0.7));
+            background-repeat: no-repeat, no-repeat;
+            background-position: center;
+        }
+        a { text-decoration: none; font-size: small;}
+        th {width: 100px; text-align: right;}
+        td {width: 200px;}
+        #box1 { background-color: rgba(255,255,255,0.7); display: inline-block;}
+        .player{ 
+            width: 100%; text-align: left; 
+        }
+        .box2 {
+            display: inline-block;
+            width:20%;
+            margin: 1% 2%;
+            box-sizing: border-box;
+            background-color: white;
+            text-align: center;
+        }
+        .box3 {
+            height: 400px;
+            overflow: hidden;
+        }
+        .box3 img{
+            max-height: initial;
+        }
+    </style>
+    <script>
+        function change() {
+            var p = document.getElementById("video")
+            p.innerHTML = "<b>KGC인삼공사 하이라이트 <br><video src = KGC인삼공사하이라이트1.mp4 width=50% controls><br>";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href=C:\Users\rlagu\Desktop\2021-2\웹프로그래밍\2020270101_김형은\21-2Final_project\Intro.html><i><b>Back</b></i></a>
+        <h1 style="text-align: center">
+            <img src="KGC인삼공사.png" width="70px">
+            KGC인삼공사
+            <img src="KGC인삼공사.png" width="70px">
+        </h1>
+    </header>
+
+    <h3>구단소개 <i><a href=Sub2-1.html>더보기</a></i> </h3>
+    <div id="box1">
+        <table>
+            <tr>
+                <th>구단명</th>
+                <td>&ensp; 현대건설 힐스테이트</td>
+                <th>연고지</th>
+                <td>&ensp; 경기도 수원시</td>
+            </tr>
+            <tr>
+                <th>창단일</th>
+                <td>&ensp; 1997년 1월 22일</td>
+                <th>프로출범일</th>
+                <td>&ensp; 2005년 2월 15일</td>
+            </tr>
+            <tr>
+                <th>역대전적</th>
+                <td>&ensp; 정규우승 3회</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>&ensp; 챔프우승 2회</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>&ensp; 통합우승 1회</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <h3> <b>대표선수</b> <i><a href=Sub2-2.html>더보기</a></i> </h3>
+
+    <div class="player">
+        <div class="box2">
+            <div class="box3">
+                <img src = "./선수/염혜선.png" width=100% title="염혜선">   
+            </div>
+            염혜선(31), 세터
+        </div>
+        <div class="box2">
+            <div class="box3">
+                <img src = "./선수/박은진.png" width=100% title="박은진">
+            </div>
+            박은진(23), 센터
+        </div>
+        <div class="box2">
+            <div class="box3">
+                <img src = "./선수/이소영.png" width=100% title="이소영">
+            </div>  
+            이소영(28), 레프트 
+        </div>
+    </div>
+    <br>
+    <!-------콘텐츠----------------->
+    <p id="video" onclick="change()">
+        <b>팀하이라이트 다시보기</b><i style="color: blue">&nbsp; click</i>
+    </p>
+</body>
+</html>
